@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Chatbot Webpage</title>
+    <link rel="stylesheet" href="static/index_code.css" />
+    <script src="static/script.js" defer></script>
+    <!-- Ensure JS is loaded after HTML -->
+  </head>
+  <body>
+    <div class="chat-container">
+      <div class="chat-header">
+        <span>Chatbot</span>
+      </div>
+      <div class="chat-messages">
+        <div class="chat-message bot">
+          <img
+            src="./static/robot_PNG7.png"
+            alt="Robot"
+            style="width: 50px; height: auto; margin-right: 10px"
+          />
+          <div class="message-content">
+            Hi, welcome to ChatBot! Go ahead and send me a message.
+          </div>
+        </div>
+      </div>
+
+      <div class="chat-input">
+        <input
+          type="text"
+          id="message-input"
+          placeholder="Enter your message..."
+        />
+        <button id="send-button">Send</button>
+      </div>
+    </div>
+  </body>
+</html>

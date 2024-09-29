@@ -1,0 +1,92 @@
+.chat-container {
+  width: 400px;
+  height: 500px;
+  border: 1px solid #ccc;
+  margin: auto; /* Center container horizontally */
+  background-color: #f8f9fa; /* Light background for the entire chat */
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+}
+
+.chat-header {
+  text-align: center;
+  font-weight: bold;
+  background-color: #007bff; /* Blue header background */
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.chat-messages {
+  flex: 1;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #d1e7dd; /* New color */
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(8, 7, 7, 0.1);
+  overflow-y: auto;
+}
+
+.chat-message {
+  margin-bottom: 10px;
+  width: 100%; /* Allow message content to occupy full width */
+  display: flex; /* Flexbox for content alignment */
+}
+
+.chat-message.bot {
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Center items vertically */
+  justify-content: flex-start; /* Align bot messages to the left */
+  margin-bottom: 10px; /* Space between messages */
+}
+
+.chat-message.user {
+  justify-content: flex-end; /* Align user messages to the right */
+}
+
+.message-content {
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 80%; /* Limit width of message bubbles */
+}
+
+.chat-message.bot .message-content {
+  background-color: #e1f5fe; /* Light blue for bot messages */
+}
+
+.chat-message.user .message-content {
+  background-color: #c8e6c9; /* Light green for user messages */
+}
+
+.chat-input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #c3c7b9; /* White background for input area */
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 -2px 5px rgba(188, 80, 80, 0.1); /* Shadow on top of input */
+}
+
+#message-input {
+  flex: 1;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px; /* Spacing between input and button */
+}
+
+#send-button {
+  padding: 5px 10px;
+  background-color: #007bff; /* Blue button background */
+  color: white; /* White text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#send-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
